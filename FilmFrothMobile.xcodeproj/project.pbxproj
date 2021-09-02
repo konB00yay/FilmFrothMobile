@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13BD908626E19354001AAD89 /* FilmFrothMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD908526E19354001AAD89 /* FilmFrothMobileApp.swift */; };
+		13BD908826E19354001AAD89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD908726E19354001AAD89 /* ContentView.swift */; };
+		13BD908A26E19355001AAD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BD908926E19355001AAD89 /* Assets.xcassets */; };
+		13BD908D26E19355001AAD89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BD908C26E19355001AAD89 /* Preview Assets.xcassets */; };
+		13BD909826E19355001AAD89 /* FilmFrothMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD909726E19355001AAD89 /* FilmFrothMobileTests.swift */; };
+		13BD90A326E19355001AAD89 /* FilmFrothMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90A226E19355001AAD89 /* FilmFrothMobileUITests.swift */; };
+		13BD90B126E1952A001AAD89 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90B026E1952A001AAD89 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13BD909426E19355001AAD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BD907A26E19354001AAD89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13BD908126E19354001AAD89;
+			remoteInfo = FilmFrothMobile;
+		};
+		13BD909F26E19355001AAD89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13BD907A26E19354001AAD89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13BD908126E19354001AAD89;
+			remoteInfo = FilmFrothMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13BD908226E19354001AAD89 /* FilmFrothMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFrothMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BD908526E19354001AAD89 /* FilmFrothMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFrothMobileApp.swift; sourceTree = "<group>"; };
+		13BD908726E19354001AAD89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		13BD908926E19355001AAD89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13BD908C26E19355001AAD89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13BD908E26E19355001AAD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BD909326E19355001AAD89 /* FilmFrothMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFrothMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BD909726E19355001AAD89 /* FilmFrothMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFrothMobileTests.swift; sourceTree = "<group>"; };
+		13BD909926E19355001AAD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BD909E26E19355001AAD89 /* FilmFrothMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FilmFrothMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13BD90A226E19355001AAD89 /* FilmFrothMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFrothMobileUITests.swift; sourceTree = "<group>"; };
+		13BD90A426E19355001AAD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13BD90B026E1952A001AAD89 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		13BD90B226E19554001AAD89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13BD907F26E19354001AAD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BD909026E19355001AAD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BD909B26E19355001AAD89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13BD907926E19354001AAD89 = {
+			isa = PBXGroup;
+			children = (
+				13BD90B226E19554001AAD89 /* README.md */,
+				13BD90B026E1952A001AAD89 /* .gitignore */,
+				13BD908426E19354001AAD89 /* FilmFrothMobile */,
+				13BD909626E19355001AAD89 /* FilmFrothMobileTests */,
+				13BD90A126E19355001AAD89 /* FilmFrothMobileUITests */,
+				13BD908326E19354001AAD89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13BD908326E19354001AAD89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13BD908226E19354001AAD89 /* FilmFrothMobile.app */,
+				13BD909326E19355001AAD89 /* FilmFrothMobileTests.xctest */,
+				13BD909E26E19355001AAD89 /* FilmFrothMobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13BD908426E19354001AAD89 /* FilmFrothMobile */ = {
+			isa = PBXGroup;
+			children = (
+				13BD908526E19354001AAD89 /* FilmFrothMobileApp.swift */,
+				13BD908726E19354001AAD89 /* ContentView.swift */,
+				13BD908926E19355001AAD89 /* Assets.xcassets */,
+				13BD908E26E19355001AAD89 /* Info.plist */,
+				13BD908B26E19355001AAD89 /* Preview Content */,
+			);
+			path = FilmFrothMobile;
+			sourceTree = "<group>";
+		};
+		13BD908B26E19355001AAD89 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				13BD908C26E19355001AAD89 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13BD909626E19355001AAD89 /* FilmFrothMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				13BD909726E19355001AAD89 /* FilmFrothMobileTests.swift */,
+				13BD909926E19355001AAD89 /* Info.plist */,
+			);
+			path = FilmFrothMobileTests;
+			sourceTree = "<group>";
+		};
+		13BD90A126E19355001AAD89 /* FilmFrothMobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13BD90A226E19355001AAD89 /* FilmFrothMobileUITests.swift */,
+				13BD90A426E19355001AAD89 /* Info.plist */,
+			);
+			path = FilmFrothMobileUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13BD908126E19354001AAD89 /* FilmFrothMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BD90A726E19355001AAD89 /* Build configuration list for PBXNativeTarget "FilmFrothMobile" */;
+			buildPhases = (
+				13BD907E26E19354001AAD89 /* Sources */,
+				13BD907F26E19354001AAD89 /* Frameworks */,
+				13BD908026E19354001AAD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilmFrothMobile;
+			productName = FilmFrothMobile;
+			productReference = 13BD908226E19354001AAD89 /* FilmFrothMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13BD909226E19355001AAD89 /* FilmFrothMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BD90AA26E19355001AAD89 /* Build configuration list for PBXNativeTarget "FilmFrothMobileTests" */;
+			buildPhases = (
+				13BD908F26E19355001AAD89 /* Sources */,
+				13BD909026E19355001AAD89 /* Frameworks */,
+				13BD909126E19355001AAD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13BD909526E19355001AAD89 /* PBXTargetDependency */,
+			);
+			name = FilmFrothMobileTests;
+			productName = FilmFrothMobileTests;
+			productReference = 13BD909326E19355001AAD89 /* FilmFrothMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13BD909D26E19355001AAD89 /* FilmFrothMobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13BD90AD26E19355001AAD89 /* Build configuration list for PBXNativeTarget "FilmFrothMobileUITests" */;
+			buildPhases = (
+				13BD909A26E19355001AAD89 /* Sources */,
+				13BD909B26E19355001AAD89 /* Frameworks */,
+				13BD909C26E19355001AAD89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13BD90A026E19355001AAD89 /* PBXTargetDependency */,
+			);
+			name = FilmFrothMobileUITests;
+			productName = FilmFrothMobileUITests;
+			productReference = 13BD909E26E19355001AAD89 /* FilmFrothMobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13BD907A26E19354001AAD89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					13BD908126E19354001AAD89 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					13BD909226E19355001AAD89 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 13BD908126E19354001AAD89;
+					};
+					13BD909D26E19355001AAD89 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 13BD908126E19354001AAD89;
+					};
+				};
+			};
+			buildConfigurationList = 13BD907D26E19354001AAD89 /* Build configuration list for PBXProject "FilmFrothMobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13BD907926E19354001AAD89;
+			productRefGroup = 13BD908326E19354001AAD89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13BD908126E19354001AAD89 /* FilmFrothMobile */,
+				13BD909226E19355001AAD89 /* FilmFrothMobileTests */,
+				13BD909D26E19355001AAD89 /* FilmFrothMobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13BD908026E19354001AAD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BD908D26E19355001AAD89 /* Preview Assets.xcassets in Resources */,
+				13BD90B126E1952A001AAD89 /* .gitignore in Resources */,
+				13BD908A26E19355001AAD89 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BD909126E19355001AAD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BD909C26E19355001AAD89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13BD907E26E19354001AAD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BD908826E19354001AAD89 /* ContentView.swift in Sources */,
+				13BD908626E19354001AAD89 /* FilmFrothMobileApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BD908F26E19355001AAD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BD909826E19355001AAD89 /* FilmFrothMobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13BD909A26E19355001AAD89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BD90A326E19355001AAD89 /* FilmFrothMobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13BD909526E19355001AAD89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13BD908126E19354001AAD89 /* FilmFrothMobile */;
+			targetProxy = 13BD909426E19355001AAD89 /* PBXContainerItemProxy */;
+		};
+		13BD90A026E19355001AAD89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13BD908126E19354001AAD89 /* FilmFrothMobile */;
+			targetProxy = 13BD909F26E19355001AAD89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13BD90A526E19355001AAD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13BD90A626E19355001AAD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13BD90A826E19355001AAD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FilmFrothMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 22W9SZ6CAU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FilmFrothMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konbeaulier.FilmFrothMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13BD90A926E19355001AAD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FilmFrothMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 22W9SZ6CAU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FilmFrothMobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konbeaulier.FilmFrothMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13BD90AB26E19355001AAD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22W9SZ6CAU;
+				INFOPLIST_FILE = FilmFrothMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konbeaulier.FilmFrothMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmFrothMobile.app/FilmFrothMobile";
+			};
+			name = Debug;
+		};
+		13BD90AC26E19355001AAD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22W9SZ6CAU;
+				INFOPLIST_FILE = FilmFrothMobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konbeaulier.FilmFrothMobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FilmFrothMobile.app/FilmFrothMobile";
+			};
+			name = Release;
+		};
+		13BD90AE26E19355001AAD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22W9SZ6CAU;
+				INFOPLIST_FILE = FilmFrothMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konbeaulier.FilmFrothMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FilmFrothMobile;
+			};
+			name = Debug;
+		};
+		13BD90AF26E19355001AAD89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22W9SZ6CAU;
+				INFOPLIST_FILE = FilmFrothMobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.konbeaulier.FilmFrothMobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FilmFrothMobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13BD907D26E19354001AAD89 /* Build configuration list for PBXProject "FilmFrothMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BD90A526E19355001AAD89 /* Debug */,
+				13BD90A626E19355001AAD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13BD90A726E19355001AAD89 /* Build configuration list for PBXNativeTarget "FilmFrothMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BD90A826E19355001AAD89 /* Debug */,
+				13BD90A926E19355001AAD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13BD90AA26E19355001AAD89 /* Build configuration list for PBXNativeTarget "FilmFrothMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BD90AB26E19355001AAD89 /* Debug */,
+				13BD90AC26E19355001AAD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13BD90AD26E19355001AAD89 /* Build configuration list for PBXNativeTarget "FilmFrothMobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13BD90AE26E19355001AAD89 /* Debug */,
+				13BD90AF26E19355001AAD89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13BD907A26E19354001AAD89 /* Project object */;
+}
