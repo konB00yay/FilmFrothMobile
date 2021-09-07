@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,20 @@
 		13BD909826E19355001AAD89 /* FilmFrothMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD909726E19355001AAD89 /* FilmFrothMobileTests.swift */; };
 		13BD90A326E19355001AAD89 /* FilmFrothMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90A226E19355001AAD89 /* FilmFrothMobileUITests.swift */; };
 		13BD90B126E1952A001AAD89 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90B026E1952A001AAD89 /* .gitignore */; };
+		13BD90B526E2BC8F001AAD89 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90B426E2BC8F001AAD89 /* Apollo */; };
+		13BD90B726E2C993001AAD89 /* BlogQueries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90B626E2C993001AAD89 /* BlogQueries.graphql */; };
+		13BD90B926E2CAE7001AAD89 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90B826E2CAE7001AAD89 /* schema.json */; };
+		13BD90BB26E2CBC7001AAD89 /* .graphqlconfig in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90BA26E2CBC7001AAD89 /* .graphqlconfig */; };
+		13BD90BD26E2CD2D001AAD89 /* apollo.config.js in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90BC26E2CD2D001AAD89 /* apollo.config.js */; };
+		13BD90BF26E2CE33001AAD89 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90BE26E2CE33001AAD89 /* API.swift */; };
+		13BD90C126E2D2D3001AAD89 /* BlogCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90C026E2D2D3001AAD89 /* BlogCardView.swift */; };
+		13BD90C426E2DB08001AAD89 /* ContentfulService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90C326E2DB08001AAD89 /* ContentfulService.swift */; };
+		13BD90C626E59CEB001AAD89 /* TokenInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90C526E59CEB001AAD89 /* TokenInterceptor.swift */; };
+		13BD90C826E59D4D001AAD89 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90C726E59D4D001AAD89 /* NetworkInterceptorProvider.swift */; };
+		13BD90CA26E5A24F001AAD89 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90C926E5A24F001AAD89 /* Network.swift */; };
+		13BD90CC26E6DBC6001AAD89 /* BlogPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90CB26E6DBC6001AAD89 /* BlogPostModel.swift */; };
+		13BD90CF26E70B12001AAD89 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90CE26E70B12001AAD89 /* Contentful */; };
+		13BD90D226E71F02001AAD89 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90D126E71F02001AAD89 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,17 @@
 		13BD90A426E19355001AAD89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13BD90B026E1952A001AAD89 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		13BD90B226E19554001AAD89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		13BD90B626E2C993001AAD89 /* BlogQueries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlogQueries.graphql; sourceTree = "<group>"; };
+		13BD90B826E2CAE7001AAD89 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = FilmFrothMobile/schema.json; sourceTree = SOURCE_ROOT; };
+		13BD90BA26E2CBC7001AAD89 /* .graphqlconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = .graphqlconfig; sourceTree = "<group>"; };
+		13BD90BC26E2CD2D001AAD89 /* apollo.config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = apollo.config.js; sourceTree = "<group>"; };
+		13BD90BE26E2CE33001AAD89 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		13BD90C026E2D2D3001AAD89 /* BlogCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCardView.swift; sourceTree = "<group>"; };
+		13BD90C326E2DB08001AAD89 /* ContentfulService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentfulService.swift; sourceTree = "<group>"; };
+		13BD90C526E59CEB001AAD89 /* TokenInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenInterceptor.swift; sourceTree = "<group>"; };
+		13BD90C726E59D4D001AAD89 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		13BD90C926E5A24F001AAD89 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		13BD90CB26E6DBC6001AAD89 /* BlogPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BD90D226E71F02001AAD89 /* SDWebImage in Frameworks */,
+				13BD90CF26E70B12001AAD89 /* Contentful in Frameworks */,
+				13BD90B526E2BC8F001AAD89 /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,11 +128,21 @@
 		13BD908426E19354001AAD89 /* FilmFrothMobile */ = {
 			isa = PBXGroup;
 			children = (
+				13BD90BC26E2CD2D001AAD89 /* apollo.config.js */,
+				13BD90BA26E2CBC7001AAD89 /* .graphqlconfig */,
+				13BD90B626E2C993001AAD89 /* BlogQueries.graphql */,
+				13BD90B826E2CAE7001AAD89 /* schema.json */,
+				13BD90C226E2DAE9001AAD89 /* Models */,
 				13BD908526E19354001AAD89 /* FilmFrothMobileApp.swift */,
 				13BD908726E19354001AAD89 /* ContentView.swift */,
 				13BD908926E19355001AAD89 /* Assets.xcassets */,
 				13BD908E26E19355001AAD89 /* Info.plist */,
 				13BD908B26E19355001AAD89 /* Preview Content */,
+				13BD90BE26E2CE33001AAD89 /* API.swift */,
+				13BD90C026E2D2D3001AAD89 /* BlogCardView.swift */,
+				13BD90C526E59CEB001AAD89 /* TokenInterceptor.swift */,
+				13BD90C726E59D4D001AAD89 /* NetworkInterceptorProvider.swift */,
+				13BD90C926E5A24F001AAD89 /* Network.swift */,
 			);
 			path = FilmFrothMobile;
 			sourceTree = "<group>";
@@ -135,6 +173,15 @@
 			path = FilmFrothMobileUITests;
 			sourceTree = "<group>";
 		};
+		13BD90C226E2DAE9001AAD89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13BD90C326E2DB08001AAD89 /* ContentfulService.swift */,
+				13BD90CB26E6DBC6001AAD89 /* BlogPostModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +198,11 @@
 			dependencies = (
 			);
 			name = FilmFrothMobile;
+			packageProductDependencies = (
+				13BD90B426E2BC8F001AAD89 /* Apollo */,
+				13BD90CE26E70B12001AAD89 /* Contentful */,
+				13BD90D126E71F02001AAD89 /* SDWebImage */,
+			);
 			productName = FilmFrothMobile;
 			productReference = 13BD908226E19354001AAD89 /* FilmFrothMobile.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +274,11 @@
 				Base,
 			);
 			mainGroup = 13BD907926E19354001AAD89;
+			packageReferences = (
+				13BD90B326E2BC8F001AAD89 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				13BD90CD26E70B12001AAD89 /* XCRemoteSwiftPackageReference "contentful" */,
+				13BD90D026E71F02001AAD89 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 13BD908326E19354001AAD89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -239,8 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				13BD908D26E19355001AAD89 /* Preview Assets.xcassets in Resources */,
+				13BD90B926E2CAE7001AAD89 /* schema.json in Resources */,
+				13BD90B726E2C993001AAD89 /* BlogQueries.graphql in Resources */,
+				13BD90BD26E2CD2D001AAD89 /* apollo.config.js in Resources */,
 				13BD90B126E1952A001AAD89 /* .gitignore in Resources */,
 				13BD908A26E19355001AAD89 /* Assets.xcassets in Resources */,
+				13BD90BB26E2CBC7001AAD89 /* .graphqlconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +326,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BD90C426E2DB08001AAD89 /* ContentfulService.swift in Sources */,
+				13BD90C626E59CEB001AAD89 /* TokenInterceptor.swift in Sources */,
+				13BD90CA26E5A24F001AAD89 /* Network.swift in Sources */,
+				13BD90C826E59D4D001AAD89 /* NetworkInterceptorProvider.swift in Sources */,
 				13BD908826E19354001AAD89 /* ContentView.swift in Sources */,
+				13BD90BF26E2CE33001AAD89 /* API.swift in Sources */,
+				13BD90C126E2D2D3001AAD89 /* BlogCardView.swift in Sources */,
+				13BD90CC26E6DBC6001AAD89 /* BlogPostModel.swift in Sources */,
 				13BD908626E19354001AAD89 /* FilmFrothMobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +654,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13BD90B326E2BC8F001AAD89 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.48.0;
+			};
+		};
+		13BD90CD26E70B12001AAD89 /* XCRemoteSwiftPackageReference "contentful" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/contentful/contentful.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.1;
+			};
+		};
+		13BD90D026E71F02001AAD89 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13BD90B426E2BC8F001AAD89 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13BD90B326E2BC8F001AAD89 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		13BD90CE26E70B12001AAD89 /* Contentful */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13BD90CD26E70B12001AAD89 /* XCRemoteSwiftPackageReference "contentful" */;
+			productName = Contentful;
+		};
+		13BD90D126E71F02001AAD89 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13BD90D026E71F02001AAD89 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13BD907A26E19354001AAD89 /* Project object */;
 }

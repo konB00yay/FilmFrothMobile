@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var contentfulService: ContentfulService
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView {
+            ForEach(contentfulService.blogPosts) { post in
+                BlogCardView(post: post)
+            }
+        }
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(ContentfulService())
     }
 }

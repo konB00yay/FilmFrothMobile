@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct FilmFrothMobileApp: App {
+    @StateObject var contentfulService = ContentfulService()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(contentfulService)
         }
     }
 }

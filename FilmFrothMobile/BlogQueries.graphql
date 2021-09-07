@@ -1,0 +1,19 @@
+query AllArticles {
+  blogPostCollection(order:date_DESC) {
+    items{
+      style
+      path
+      title
+      date
+      preview
+      seoPic{
+        url
+      }
+      previewImage{
+        url
+      }
+      author
+      content
+    }
+  }
+}
