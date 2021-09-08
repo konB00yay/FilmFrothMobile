@@ -12,7 +12,7 @@ class Network {
     static let shared = Network()
     
     private(set) lazy var apollo: ApolloClient = {
-        let spaceId = "" //Remove space id as well
+        let spaceId = ""
         let client = URLSessionClient()
         let cache = InMemoryNormalizedCache()
         let store = ApolloStore(cache: cache)

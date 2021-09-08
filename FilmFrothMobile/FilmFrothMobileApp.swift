@@ -12,7 +12,10 @@ struct FilmFrothMobileApp: App {
     @StateObject var contentfulService = ContentfulService()
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(contentfulService)
+            NavigationView{
+                ContentView()
+                    .environmentObject(contentfulService)
+            }
         }
     }
 }

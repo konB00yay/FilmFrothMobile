@@ -15,7 +15,7 @@ class TokenInterceptor: ApolloInterceptor {
         request: HTTPRequest<Operation>,
         response: HTTPResponse<Operation>?,
         completion: @escaping (Result<GraphQLResult<Operation.Data>, Error>) -> Void) {
-        let token =  "Bearer " //Removing token for now: Confirm read only access
+        let token =  "Bearer "
         request.addHeader(name: "Authorization", value: token)
         
         chain.proceedAsync(request: request,

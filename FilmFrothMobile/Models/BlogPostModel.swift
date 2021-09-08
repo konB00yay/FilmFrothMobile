@@ -56,3 +56,13 @@ struct BlogPosts: Decodable {
         }
     }
 }
+
+extension BlogPosts{
+    static var data: [Post] {
+        [
+            Post(id: "/test-3", author: "Testing", title: "Test Movie Strikes Again", preview: "This is a testing film for all the testing one could dream of", date: "2021-09-06", content: "# Film", style: 2),
+            Post(id: "/test-2", author: "Testing", title: "Test Movie: Return of the Test", preview: "This is a testing film for all the testing one could dream of", date: "2021-09-05", content: "# Film", style: 2),
+            Post(id: "/test-1", author: "Testing", title: "Test Movie", preview: "This is a testing film for all the testing one could dream of", date: "2021-09-04", content: "# Film", style: 2)
+        ]
+    }
+}

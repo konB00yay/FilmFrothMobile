@@ -11,23 +11,30 @@ import SDWebImage
 struct BlogCardView: View {
     var post: BlogPosts.Post
     var body: some View {
-        VStack {
-            Image(systemName: "person.fill")
-                .data(url: URL(string: post.seoPicURL)!)
-                .scaledToFit()
-            Text("\(post.title)")
-                .font(.largeTitle)
-            Text("By: \(post.author)")
-                .font(.caption)
-            
+        ZStack {
+            RoundedRectangle(cornerRadius: 0)
+                .fill(Color("BlogColor"))
+                .shadow(radius: 5)
+            VStack {
+                Image(systemName: "person.fill")
+                    .data(url: URL(string: post.seoPicURL)!)
+                    .scaledToFit()
+                Text("\(post.title)")
+                    .font(.largeTitle)
+                Text("By: \(post.author)")
+                    .font(.caption)
+                Text("\(post.date)")
+                    .font(.caption2)
+                
+            }
         }
+        .padding()
     }
 }
 
 struct BlogCardView_Previews: PreviewProvider {
-    static var test_post = BlogPosts.Post(id: "/test", author: "Testing", title: "Test Movie Strikes Again", preview: "This is a testing film for all the testing one could dream of", date: "2021-09-06", content: "# Film", style: 2)
     static var previews: some View {
-        BlogCardView(post: test_post)
+        BlogCardView(post: BlogPosts.data[0])
             .previewLayout(.fixed(width: 400, height: 300))
     }
 }

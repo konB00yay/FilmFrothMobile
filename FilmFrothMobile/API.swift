@@ -9,7 +9,7 @@ public final class AllArticlesQuery: GraphQLQuery {
   public let operationDefinition: String =
     """
     query AllArticles {
-      blogPostCollection(order: date_DESC) {
+      blogPostCollection(order: date_DESC, limit:10) {
         __typename
         items {
           __typename

@@ -10,11 +10,15 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var contentfulService: ContentfulService
     var body: some View {
-        ScrollView {
+        List {
             ForEach(contentfulService.blogPosts) { post in
-                BlogCardView(post: post)
+                NavigationLink(destination: PostView(post: post)){
+                    BlogCardView(post: post)
+                }
+                .navigationViewStyle(StackNavigationViewStyle())
             }
         }
+        .navigationTitle("Film And Froth")
     }
 }
 

@@ -28,6 +28,7 @@
 		13BD90CC26E6DBC6001AAD89 /* BlogPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90CB26E6DBC6001AAD89 /* BlogPostModel.swift */; };
 		13BD90CF26E70B12001AAD89 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90CE26E70B12001AAD89 /* Contentful */; };
 		13BD90D226E71F02001AAD89 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90D126E71F02001AAD89 /* SDWebImage */; };
+		13BD90D426E85924001AAD89 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90D326E85924001AAD89 /* PostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		13BD90C726E59D4D001AAD89 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
 		13BD90C926E5A24F001AAD89 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		13BD90CB26E6DBC6001AAD89 /* BlogPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogPostModel.swift; sourceTree = "<group>"; };
+		13BD90D326E85924001AAD89 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				13BD90C526E59CEB001AAD89 /* TokenInterceptor.swift */,
 				13BD90C726E59D4D001AAD89 /* NetworkInterceptorProvider.swift */,
 				13BD90C926E5A24F001AAD89 /* Network.swift */,
+				13BD90D326E85924001AAD89 /* PostView.swift */,
 			);
 			path = FilmFrothMobile;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				13BD90BF26E2CE33001AAD89 /* API.swift in Sources */,
 				13BD90C126E2D2D3001AAD89 /* BlogCardView.swift in Sources */,
 				13BD90CC26E6DBC6001AAD89 /* BlogPostModel.swift in Sources */,
+				13BD90D426E85924001AAD89 /* PostView.swift in Sources */,
 				13BD908626E19354001AAD89 /* FilmFrothMobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

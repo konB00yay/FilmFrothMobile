@@ -21,15 +21,19 @@ final class ContentfulService: ObservableObject{
     }
     
     func loadAllArticles(){
-        DispatchQueue.global(qos: .background).async {
-            Network.shared.apollo.fetch(query: AllArticlesQuery()) { [weak self] result in
-                switch result {
-                case .success(let graphQLResult):
-                    if let blogs = graphQLResult.data?.blogPostCollection {
-                        self?.blogPosts = self?.process(data: blogs) ?? []
+        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1" {
+            self.blogPosts = BlogPosts.data
+        } else {
+            DispatchQueue.global(qos: .background).async {
+                Network.shared.apollo.fetch(query: AllArticlesQuery()) { [weak self] result in
+                    switch result {
+                    case .success(let graphQLResult):
+                        if let blogs = graphQLResult.data?.blogPostCollection {
+                            self?.blogPosts = self?.process(data: blogs) ?? []
+                        }
+                    case .failure(let error):
+                        print("Error", error)
                     }
-                case .failure(let error):
-                    print("Error", error)
                 }
             }
         }
