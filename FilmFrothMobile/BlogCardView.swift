@@ -11,21 +11,20 @@ import SDWebImage
 struct BlogCardView: View {
     var post: BlogPosts.Post
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 0)
-                .fill(Color("BlogColor"))
-                .shadow(radius: 5)
-            VStack {
-                Image(systemName: "person.fill")
-                    .data(url: URL(string: post.seoPicURL)!)
-                    .scaledToFit()
-                Text("\(post.title)")
-                    .font(.largeTitle)
-                Text("By: \(post.author)")
-                    .font(.caption)
-                Text("\(post.date)")
-                    .font(.caption2)
-                
+        VStack {
+            ZStack {
+                VStack {
+                    Image(systemName: "person.fill")
+                        .data(url: URL(string: post.seoPicURL)!)
+                        .scaledToFit()
+                    Text("\(post.title)")
+                        .font(.largeTitle)
+                    Text("By: \(post.author)")
+                        .font(.caption)
+                    Text("\(post.date)")
+                        .font(.caption2)
+                    
+                }
             }
         }
         .padding()

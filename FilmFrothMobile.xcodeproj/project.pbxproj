@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1344436826F39C240004C946 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 1344436726F39C240004C946 /* Ink */; };
+		1344436A26F3B9460004C946 /* PostContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1344436926F3B9460004C946 /* PostContentView.swift */; };
 		13BD908626E19354001AAD89 /* FilmFrothMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD908526E19354001AAD89 /* FilmFrothMobileApp.swift */; };
 		13BD908826E19354001AAD89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD908726E19354001AAD89 /* ContentView.swift */; };
 		13BD908A26E19355001AAD89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13BD908926E19355001AAD89 /* Assets.xcassets */; };
@@ -17,7 +19,6 @@
 		13BD90B526E2BC8F001AAD89 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90B426E2BC8F001AAD89 /* Apollo */; };
 		13BD90B726E2C993001AAD89 /* BlogQueries.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90B626E2C993001AAD89 /* BlogQueries.graphql */; };
 		13BD90B926E2CAE7001AAD89 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90B826E2CAE7001AAD89 /* schema.json */; };
-		13BD90BB26E2CBC7001AAD89 /* .graphqlconfig in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90BA26E2CBC7001AAD89 /* .graphqlconfig */; };
 		13BD90BD26E2CD2D001AAD89 /* apollo.config.js in Resources */ = {isa = PBXBuildFile; fileRef = 13BD90BC26E2CD2D001AAD89 /* apollo.config.js */; };
 		13BD90BF26E2CE33001AAD89 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90BE26E2CE33001AAD89 /* API.swift */; };
 		13BD90C126E2D2D3001AAD89 /* BlogCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90C026E2D2D3001AAD89 /* BlogCardView.swift */; };
@@ -29,6 +30,7 @@
 		13BD90CF26E70B12001AAD89 /* Contentful in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90CE26E70B12001AAD89 /* Contentful */; };
 		13BD90D226E71F02001AAD89 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 13BD90D126E71F02001AAD89 /* SDWebImage */; };
 		13BD90D426E85924001AAD89 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD90D326E85924001AAD89 /* PostView.swift */; };
+		13FE59092708CE34004FBB2D /* RichText in Frameworks */ = {isa = PBXBuildFile; productRef = 13FE59082708CE34004FBB2D /* RichText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1344436926F3B9460004C946 /* PostContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentView.swift; sourceTree = "<group>"; };
 		13BD908226E19354001AAD89 /* FilmFrothMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFrothMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BD908526E19354001AAD89 /* FilmFrothMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmFrothMobileApp.swift; sourceTree = "<group>"; };
 		13BD908726E19354001AAD89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 		13BD90B226E19554001AAD89 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		13BD90B626E2C993001AAD89 /* BlogQueries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = BlogQueries.graphql; sourceTree = "<group>"; };
 		13BD90B826E2CAE7001AAD89 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = schema.json; path = FilmFrothMobile/schema.json; sourceTree = SOURCE_ROOT; };
-		13BD90BA26E2CBC7001AAD89 /* .graphqlconfig */ = {isa = PBXFileReference; lastKnownFileType = text; path = .graphqlconfig; sourceTree = "<group>"; };
 		13BD90BC26E2CD2D001AAD89 /* apollo.config.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = apollo.config.js; sourceTree = "<group>"; };
 		13BD90BE26E2CE33001AAD89 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		13BD90C026E2D2D3001AAD89 /* BlogCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCardView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13BD90D226E71F02001AAD89 /* SDWebImage in Frameworks */,
+				13FE59092708CE34004FBB2D /* RichText in Frameworks */,
+				1344436826F39C240004C946 /* Ink in Frameworks */,
 				13BD90CF26E70B12001AAD89 /* Contentful in Frameworks */,
 				13BD90B526E2BC8F001AAD89 /* Apollo in Frameworks */,
 			);
@@ -131,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				13BD90BC26E2CD2D001AAD89 /* apollo.config.js */,
-				13BD90BA26E2CBC7001AAD89 /* .graphqlconfig */,
 				13BD90B626E2C993001AAD89 /* BlogQueries.graphql */,
 				13BD90B826E2CAE7001AAD89 /* schema.json */,
 				13BD90C226E2DAE9001AAD89 /* Models */,
@@ -146,6 +149,7 @@
 				13BD90C726E59D4D001AAD89 /* NetworkInterceptorProvider.swift */,
 				13BD90C926E5A24F001AAD89 /* Network.swift */,
 				13BD90D326E85924001AAD89 /* PostView.swift */,
+				1344436926F3B9460004C946 /* PostContentView.swift */,
 			);
 			path = FilmFrothMobile;
 			sourceTree = "<group>";
@@ -205,6 +209,8 @@
 				13BD90B426E2BC8F001AAD89 /* Apollo */,
 				13BD90CE26E70B12001AAD89 /* Contentful */,
 				13BD90D126E71F02001AAD89 /* SDWebImage */,
+				1344436726F39C240004C946 /* Ink */,
+				13FE59082708CE34004FBB2D /* RichText */,
 			);
 			productName = FilmFrothMobile;
 			productReference = 13BD908226E19354001AAD89 /* FilmFrothMobile.app */;
@@ -281,6 +287,8 @@
 				13BD90B326E2BC8F001AAD89 /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				13BD90CD26E70B12001AAD89 /* XCRemoteSwiftPackageReference "contentful" */,
 				13BD90D026E71F02001AAD89 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				1344436626F39C240004C946 /* XCRemoteSwiftPackageReference "ink" */,
+				13FE59072708CE34004FBB2D /* XCRemoteSwiftPackageReference "RichText" */,
 			);
 			productRefGroup = 13BD908326E19354001AAD89 /* Products */;
 			projectDirPath = "";
@@ -304,7 +312,6 @@
 				13BD90BD26E2CD2D001AAD89 /* apollo.config.js in Resources */,
 				13BD90B126E1952A001AAD89 /* .gitignore in Resources */,
 				13BD908A26E19355001AAD89 /* Assets.xcassets in Resources */,
-				13BD90BB26E2CBC7001AAD89 /* .graphqlconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +338,7 @@
 			files = (
 				13BD90C426E2DB08001AAD89 /* ContentfulService.swift in Sources */,
 				13BD90C626E59CEB001AAD89 /* TokenInterceptor.swift in Sources */,
+				1344436A26F3B9460004C946 /* PostContentView.swift in Sources */,
 				13BD90CA26E5A24F001AAD89 /* Network.swift in Sources */,
 				13BD90C826E59D4D001AAD89 /* NetworkInterceptorProvider.swift in Sources */,
 				13BD908826E19354001AAD89 /* ContentView.swift in Sources */,
@@ -660,6 +668,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1344436626F39C240004C946 /* XCRemoteSwiftPackageReference "ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/ink.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
 		13BD90B326E2BC8F001AAD89 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
@@ -684,9 +700,22 @@
 				minimumVersion = 5.11.1;
 			};
 		};
+		13FE59072708CE34004FBB2D /* XCRemoteSwiftPackageReference "RichText" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NuPlay/RichText.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1344436726F39C240004C946 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1344436626F39C240004C946 /* XCRemoteSwiftPackageReference "ink" */;
+			productName = Ink;
+		};
 		13BD90B426E2BC8F001AAD89 /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 13BD90B326E2BC8F001AAD89 /* XCRemoteSwiftPackageReference "apollo-ios" */;
@@ -701,6 +730,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 13BD90D026E71F02001AAD89 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		13FE59082708CE34004FBB2D /* RichText */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13FE59072708CE34004FBB2D /* XCRemoteSwiftPackageReference "RichText" */;
+			productName = RichText;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

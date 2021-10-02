@@ -9,12 +9,15 @@ import SwiftUI
 
 @main
 struct FilmFrothMobileApp: App {
-    @StateObject var contentfulService = ContentfulService()
+    @ObservedObject var contentfulService = ContentfulService()
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                ContentView()
+                ContentView(currPagePosts: $contentfulService.currPagePosts, blogPosts: $contentfulService.blogPosts, totalArticles: $contentfulService.totalArticles)
                     .environmentObject(contentfulService)
+            }
+            .onAppear{
+                contentfulService.loadAllArticles()
             }
         }
     }

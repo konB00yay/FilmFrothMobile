@@ -6,11 +6,34 @@
 //
 
 import SwiftUI
+import Ink
+import MarkdownView
 
 struct PostView: View {
     let post: BlogPosts.Post
+    let srcMod = Modifier(target: .images) { html, markdown in
+        html.replacingOccurrences(of: "//images.ctfassets", with: "https://images.ctfassets")
+    }
+    let imgMod = Modifier(target: .images){ html, markdown in
+        html.replacingOccurrences(of: "src=\"https://images.ctfassets", with: "width='360' src=\"https://images.ctfassets")
+    }
+    var parser: MarkdownParser {
+        var p = MarkdownParser()
+        p.addModifier(srcMod)
+        p.addModifier(imgMod)
+        return p
+    }
+    var html: String {
+        return parser.html(from: post.content)
+    }
+    let md = MarkdownView()
     var body: some View {
-        Text("\(post.title)")
+        ScrollView(.vertical){
+            Text("\(post.title)")
+                .font(.title)
+            Spacer()
+            PostContentView(postContent: html)
+        }
     }
 }
 

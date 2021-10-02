@@ -3,7 +3,8 @@ module.exports = {
 
     service: {
       name: 'film-and-froth',
-      includes: ['.']
+      includes: ['.'],
+        localSchemaFile: './schema.json'
     }
   }
 };

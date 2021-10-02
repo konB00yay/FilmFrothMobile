@@ -8,9 +8,10 @@ public final class AllArticlesQuery: GraphQLQuery {
   /// The raw GraphQL definition of this operation.
   public let operationDefinition: String =
     """
-    query AllArticles {
-      blogPostCollection(order: date_DESC, limit:10) {
+    query AllArticles($limit: Int, $skip: Int) {
+      blogPostCollection(order: date_DESC, limit: $limit, skip: $skip) {
         __typename
+        total
         items {
           __typename
           style
@@ -35,7 +36,16 @@ public final class AllArticlesQuery: GraphQLQuery {
 
   public let operationName: String = "AllArticles"
 
-  public init() {
+  public var limit: Int?
+  public var skip: Int?
+
+  public init(limit: Int? = nil, skip: Int? = nil) {
+    self.limit = limit
+    self.skip = skip
+  }
+
+  public var variables: GraphQLMap? {
+    return ["limit": limit, "skip": skip]
   }
 
   public struct Data: GraphQLSelectionSet {
@@ -43,7 +53,7 @@ public final class AllArticlesQuery: GraphQLQuery {
 
     public static var selections: [GraphQLSelection] {
       return [
-        GraphQLField("blogPostCollection", arguments: ["order": "date_DESC"], type: .object(BlogPostCollection.selections)),
+        GraphQLField("blogPostCollection", arguments: ["order": "date_DESC", "limit": GraphQLVariable("limit"), "skip": GraphQLVariable("skip")], type: .object(BlogPostCollection.selections)),
       ]
     }
 
@@ -72,6 +82,7 @@ public final class AllArticlesQuery: GraphQLQuery {
       public static var selections: [GraphQLSelection] {
         return [
           GraphQLField("__typename", type: .nonNull(.scalar(String.self))),
+          GraphQLField("total", type: .nonNull(.scalar(Int.self))),
           GraphQLField("items", type: .nonNull(.list(.object(Item.selections)))),
         ]
       }
@@ -82,8 +93,8 @@ public final class AllArticlesQuery: GraphQLQuery {
         self.resultMap = unsafeResultMap
       }
 
-      public init(items: [Item?]) {
-        self.init(unsafeResultMap: ["__typename": "BlogPostCollection", "items": items.map { (value: Item?) -> ResultMap? in value.flatMap { (value: Item) -> ResultMap in value.resultMap } }])
+      public init(total: Int, items: [Item?]) {
+        self.init(unsafeResultMap: ["__typename": "BlogPostCollection", "total": total, "items": items.map { (value: Item?) -> ResultMap? in value.flatMap { (value: Item) -> ResultMap in value.resultMap } }])
       }
 
       public var __typename: String {
@@ -92,6 +103,15 @@ public final class AllArticlesQuery: GraphQLQuery {
         }
         set {
           resultMap.updateValue(newValue, forKey: "__typename")
+        }
+      }
+
+      public var total: Int {
+        get {
+          return resultMap["total"]! as! Int
+        }
+        set {
+          resultMap.updateValue(newValue, forKey: "total")
         }
       }
 
